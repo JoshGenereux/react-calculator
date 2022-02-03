@@ -17,6 +17,7 @@ body {
     height: 675px;
     border-radius: 20px;
     border: solid 5px black;
+    box-shadow: 10px 10px 10px #312020;
 }
 
 .screen {
@@ -25,13 +26,22 @@ body {
     background-color: black;
     border: solid 2px white;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
 }
 
 .screen-numbers {
-    text-align: center;
     color: white;
-    font-size: 45px;
-    margin-top: 11%;
+    font-size: 50px;
+    margin-right: 5px;
+}
+.screen-small-num{
+    color: white;
+    opacity: .6;
+    font-size: 30px;
+    margin-right: 5px
 }
 
 .button-container {
@@ -40,17 +50,39 @@ body {
     height: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 5px;
+}
+
+.clear-div{
+    width: 95%;
+    height: 20%;
+    display: flex;
+    justify-content: end;
+    gap: 15px
+}
+.button-div{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 
 button {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
+    font-size: 25px;
+    border: none;
+    font-weight: bold;
 }
 button:hover {
-    background-color: green;
+    background-color: #86d986;
+    color: white;
+    border: white 2px solid
 }
